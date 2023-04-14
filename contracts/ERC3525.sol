@@ -15,7 +15,11 @@ import "./extensions/IERC721Enumerable.sol";//ERC-721 可选枚举扩展
 import "./extensions/IERC721Metadata.sol";//ERC-721 可选元数据扩展
 import "./extensions/IERC3525Metadata.sol";//ERC-3525 元数据的可选扩展
 import "./interface/IERC3525MetadataDescriptor.sol";//ERC-3525 元数据资源路径
-
+/**
+ * @title ERC-3525 Semi-Fungible Token Standard
+ * @author 0xSimon
+ * @notice https://github.com/solv-finance/erc-3525/blob/main/contracts/ERC3525.sol
+ */
 contract ERC3525 is Context, IERC3525Metadata, IERC721Enumerable{
     using Strings for address;
     using Strings for uint256;
